@@ -1,0 +1,804 @@
+//setTool("rectangle");
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K05RA2_raw\\Kierunek3\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0 save=[F:\\Natalia Milaniak\\bigmacro]");
+makeRectangle(312, 330, 1740, 1710);
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear slice");
+makeRectangle(312, 447, 1740, 1593);
+makeRectangle(312, 447, 1740, 1509);
+run("Undo");
+makeRectangle(312, 351, 1740, 1605);
+makeRectangle(312, 351, 1740, 1650);
+run("Rotate... ", "angle=4 grid=1 interpolation=Bilinear slice");
+makeRectangle(312, 459, 1740, 1542);
+makeRectangle(312, 459, 1740, 1458);
+makeRectangle(405, 459, 1647, 1458);
+makeRectangle(405, 459, 1467, 1458);
+run("Undo");
+makeRectangle(405, 363, 1467, 1554);
+makeRectangle(405, 363, 1467, 1626);
+makeRectangle(405, 363, 1545, 1626);
+makeRectangle(405, 363, 1545, 1626);
+makeRectangle(288, 363, 1662, 1626);
+run("Rotate... ", "angle=4 grid=1 interpolation=Bilinear stack");
+makeRectangle(288, 453, 1662, 1536);
+makeRectangle(288, 453, 1662, 1461);
+makeRectangle(288, 453, 1572, 1461);
+makeRectangle(288, 453, 1596, 1461);
+makeRectangle(396, 453, 1488, 1461);
+makeRectangle(315, 375, 1800, 1719);
+run("Rotate... ", "angle=359.5 grid=1 interpolation=Bilinear stack");
+makeRectangle(315, 462, 1800, 1632);
+makeRectangle(402, 462, 1713, 1632);
+makeRectangle(402, 462, 1713, 1464);
+makeRectangle(402, 462, 1473, 1464);
+run("Make Substack...", "  slices=330-1330");
+makeRectangle(16, 20, 1457, 1444);
+makeRectangle(0, 20, 1473, 1444);
+makeRectangle(0, 10, 1473, 1454);
+makeRectangle(0, 10, 1473, 1454);
+makeRectangle(0, 10, 1473, 1454);
+run("Crop");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K05RA1_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+//setTool("rectangle");
+
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06LA1_raw\\Kierunek1\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(339, 342, 1836, 1749);
+makeRectangle(339, 261, 1836, 1830);
+makeRectangle(234, 261, 1941, 1830);
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear slice");
+makeRectangle(234, 372, 1941, 1719);
+makeRectangle(234, 372, 1746, 1719);
+makeRectangle(234, 372, 1746, 1524);
+makeRectangle(234, 372, 1746, 1533);
+makeRectangle(390, 372, 1590, 1533);
+run("Undo");
+makeRectangle(390, 294, 1590, 1611);
+makeRectangle(390, 294, 1653, 1611);
+makeRectangle(390, 294, 1653, 1674);
+makeRectangle(297, 294, 1746, 1674);
+run("Rotate... ", "angle=3.5 grid=1 interpolation=Bilinear slice");
+makeRectangle(297, 375, 1746, 1593);
+makeRectangle(297, 375, 1680, 1593);
+makeRectangle(297, 375, 1680, 1530);
+makeRectangle(384, 375, 1593, 1530);
+run("Undo");
+makeRectangle(384, 267, 1593, 1638);
+makeRectangle(384, 267, 1713, 1638);
+makeRectangle(384, 267, 1713, 1701);
+makeRectangle(315, 1107, 51, 9);
+makeRectangle(231, 198, 1914, 1875);
+run("Rotate... ", "angle=3.50 grid=1 interpolation=Bilinear stack");
+makeRectangle(231, 372, 1914, 1701);
+makeRectangle(231, 372, 1914, 1701);
+makeRectangle(231, 372, 1914, 1539);
+makeRectangle(231, 372, 1752, 1539);
+makeRectangle(321, 369, 1752, 1539);
+makeRectangle(387, 369, 1686, 1539);
+makeRectangle(387, 369, 1596, 1539);
+makeRectangle(387, 378, 1596, 1530);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06LA1_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+//setTool("rectangle");
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06LA1_raw\\Kierunek2\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(423, 411, 1440, 1548);
+makeRectangle(351, 411, 1512, 1548);
+makeRectangle(1812, 396, 210, 9);
+makeRectangle(396, 372, 1548, 1608);
+makeRectangle(327, 372, 1617, 1608);
+makeRectangle(327, 402, 1617, 1578);
+makeRectangle(327, 402, 1617, 1590);
+makeRectangle(327, 375, 1617, 1617);
+run("Rotate... ", "angle=358 grid=1 interpolation=Bilinear slice");
+makeRectangle(327, 405, 1617, 1587);
+makeRectangle(327, 405, 1617, 1527);
+makeRectangle(375, 405, 1569, 1527);
+makeRectangle(375, 405, 1506, 1527);
+run("Undo");
+makeRectangle(375, 321, 1506, 1611);
+makeRectangle(291, 666, 1683, 1311);
+makeRectangle(291, 225, 1683, 1752);
+run("Rotate... ", "angle=358.5 grid=1 interpolation=Bilinear stack");
+makeRectangle(291, 405, 1683, 1572);
+makeRectangle(384, 405, 1590, 1572);
+makeRectangle(384, 405, 1590, 1527);
+makeRectangle(384, 405, 1488, 1527);
+run("Make Substack...", "  slices=330-1330");
+makeRectangle(8, 12, 1464, 1515);
+makeRectangle(8, 0, 1464, 1527);
+makeRectangle(0, 0, 1472, 1527);
+run("Crop");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06LA1_raw\\Kierunek2\\volume.xls");
+run("Close");run("Close");run("Close");
+
+//setTool("rectangle");
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06LA1_raw\\Kierunek3\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(345, 384, 1659, 1662);
+makeRectangle(345, 300, 1659, 1746);
+run("Rotate... ", "angle=2 grid=1 interpolation=Bilinear slice");
+makeRectangle(345, 387, 1659, 1659);
+makeRectangle(345, 387, 1659, 1587);
+makeRectangle(432, 387, 1572, 1587);
+makeRectangle(432, 387, 1461, 1587);
+run("Undo");
+makeRectangle(432, 300, 1551, 1674);
+makeRectangle(396, 2001, 39, 66);
+makeRectangle(270, 753, 1719, 1323);
+makeRectangle(270, 261, 1719, 1815);
+run("Rotate... ", "angle=2 grid=1 interpolation=Bilinear stack");
+makeRectangle(270, 381, 1719, 1695);
+makeRectangle(270, 381, 1719, 1602);
+makeRectangle(435, 381, 1554, 1602);
+makeRectangle(435, 381, 1464, 1602);
+run("Make Substack...", "  slices=330-1330");
+makeRectangle(8, 14, 1442, 1588);
+makeRectangle(8, 10, 1442, 1592);
+makeRectangle(0, 10, 1450, 1592);
+makeRectangle(0, 10, 1464, 1592);
+run("Crop");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06LA1_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+//setTool("rectangle");
+
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA2_raw\\Kierunek1\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(156, 246, 1893, 1728);
+makeRectangle(156, 201, 1893, 1773);
+run("Rotate... ", "angle=1 grid=1 interpolation=Bilinear slice");
+makeRectangle(156, 294, 1893, 1680);
+makeRectangle(156, 294, 1776, 1680);
+makeRectangle(462, 294, 1470, 1680);
+makeRectangle(1194, 1896, 27, 93);
+makeRectangle(468, 237, 1482, 1626);
+makeRectangle(456, 237, 1494, 1626);
+makeRectangle(456, 288, 1494, 1575);
+makeRectangle(456, 288, 1470, 1575);
+makeRectangle(456, 288, 1470, 1542);
+makeRectangle(456, 297, 1470, 1533);
+run("Undo");
+makeRectangle(456, 177, 1614, 1653);
+makeRectangle(360, 177, 1710, 1767);
+run("Rotate... ", "angle=1 grid=1 interpolation=Bilinear stack");
+makeRectangle(360, 297, 1710, 1647);
+makeRectangle(360, 297, 1569, 1647);
+makeRectangle(360, 297, 1569, 1530);
+makeRectangle(465, 297, 1464, 1530);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA2_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+//setTool("rectangle");
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA2_raw\\Kierunek2\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(399, 288, 1737, 1773);
+run("Rotate... ", "angle=358 grid=1 interpolation=Bilinear slice");
+makeRectangle(399, 393, 1737, 1668);
+makeRectangle(399, 393, 1587, 1668);
+makeRectangle(399, 393, 1587, 1536);
+makeRectangle(477, 393, 1509, 1536);
+run("Undo");
+makeRectangle(477, 318, 1632, 1611);
+makeRectangle(387, 318, 1722, 1668);
+run("Rotate... ", "angle=358 grid=1 interpolation=Bilinear stack");
+makeRectangle(387, 387, 1602, 1599);
+makeRectangle(477, 387, 1512, 1539);
+makeRectangle(477, 399, 1512, 1527);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA2_raw\\Kierunek2\\volume.xls");
+run("Close");
+run("Close");
+run("Close");
+
+//setTool("rectangle");
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA2_raw\\Kierunek3\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(264, 300, 1848, 1650);
+run("Rotate... ", "angle=358 grid=1 interpolation=Bilinear slice");
+makeRectangle(264, 384, 1848, 1566);
+makeRectangle(264, 384, 1848, 1482);
+makeRectangle(384, 384, 1728, 1482);
+makeRectangle(384, 384, 1728, 1536);
+makeRectangle(384, 327, 1728, 1593);
+run("Undo");
+run("Rotate... ", "angle=359 grid=1 interpolation=Bilinear stack");
+makeRectangle(384, 390, 1728, 1530);
+makeRectangle(468, 390, 1644, 1530);
+makeRectangle(468, 390, 1515, 1530);
+makeRectangle(474, 399, 1545, 1458);
+makeRectangle(474, 393, 1545, 1464);
+makeRectangle(468, 393, 1551, 1464);
+makeRectangle(468, 393, 1518, 1464);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA2_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+//setTool("rectangle");
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA3_raw\\Kierunek1\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+makeRectangle(462, 426, 1473, 1428);
+makeRectangle(462, 438, 1473, 1416);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA3_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+//setTool("rectangle");
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA3_raw\\Kierunek2\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+makeRectangle(381, 408, 1656, 1539);
+makeRectangle(381, 438, 1656, 1509);
+makeRectangle(381, 438, 1581, 1509);
+makeRectangle(420, 438, 1542, 1509);
+makeRectangle(420, 438, 1542, 1437);
+
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA3_raw\\Kierunek2\\volume.xls");
+run("Close");
+run("Close");
+run("Close");
+
+//setTool("rectangle");
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA3_raw\\Kierunek3\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+makeRectangle(390, 372, 1605, 1461);
+makeRectangle(390, 384, 1605, 1449);
+makeRectangle(390, 381, 1605, 1452);
+makeRectangle(390, 381, 1599, 1452);
+makeRectangle(426, 381, 1563, 1452);
+makeRectangle(426, 381, 1563, 1482);
+makeRectangle(435, 381, 1554, 1482);
+run("Make Substack...", "  slices=330-1330");
+makeRectangle(32, 16, 1522, 1466);
+makeRectangle(32, 6, 1522, 1476);
+makeRectangle(6, 6, 1548, 1476);
+run("Crop");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\K06RA3_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+
+
+
+//setTool("rectangle");
+
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1LA_raw\\Kierunek1\\P1\\6_5um_2284x2284x1700.raw] image=8-bit width=2284 height=2284 offset=0 number=1700 gap=0");
+makeRectangle(309, 489, 1752, 1503);
+makeRectangle(309, 423, 1752, 1569);
+makeRectangle(309, 423, 1677, 1569);
+makeRectangle(384, 423, 1602, 1569);
+makeRectangle(384, 423, 1602, 1530);
+makeRectangle(384, 462, 1602, 1491);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1LA_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1LA_raw\\Kierunek2\\P1\\6_5um_2284x2284x1700.raw] image=8-bit width=2284 height=2284 offset=0 number=1700 gap=0");
+makeRectangle(324, 219, 1851, 1857);
+makeRectangle(324, 327, 1851, 1749);
+run("Rotate... ", "angle=359 grid=1 interpolation=Bilinear slice");
+makeRectangle(324, 399, 1851, 1677);
+makeRectangle(324, 399, 1644, 1677);
+run("Undo");
+makeRectangle(324, 339, 1743, 1737);
+run("Rotate... ", "angle=359 grid=1 interpolation=Bilinear stack");
+makeRectangle(324, 399, 1743, 1677);
+makeRectangle(324, 399, 1647, 1677);
+makeRectangle(324, 399, 1647, 1533);
+makeRectangle(381, 399, 1590, 1533);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1LA_raw\\Kierunek2\\volume.xls");
+run("Close");
+run("Close");
+run("Close");
+
+//setTool("rectangle");
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1LA_raw\\Kierunek3\\P1\\6_5um_2284x2284x1800.raw] image=8-bit width=2284 height=2284 offset=0 number=1800 gap=0");
+run("In [+]");
+run("Add to Manager");
+makeRectangle(843, 227, 178, 100);
+//setTool("zoom");
+//setTool("rectangle");
+makeRectangle(328, 404, 1620, 1556);
+makeRectangle(328, 468, 1620, 1492);
+makeRectangle(328, 468, 1596, 1492);
+makeRectangle(380, 468, 1544, 1492);
+makeRectangle(380, 468, 1544, 1484);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1LA_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+//setTool("rectangle");
+
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RA1_raw\\Kierunek1\\P1\\1RA1_K1_P1_6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+run("Rotate... ", "angle=45 grid=1 interpolation=Bilinear slice");
+run("Undo");
+run("Rotate... ", "angle=47 grid=1 interpolation=Bilinear stack");
+makeRectangle(138, 339, 1956, 1749);
+run("Rotate... ", "angle=2 grid=1 interpolation=Bilinear slice");
+makeRectangle(138, 375, 1956, 1713);
+makeRectangle(138, 375, 1821, 1713);
+makeRectangle(291, 375, 1668, 1713);
+makeRectangle(291, 375, 1668, 1734);
+makeRectangle(291, 282, 1758, 1827);
+makeRectangle(237, 249, 1812, 1860);
+run("Rotate... ");
+run("Undo");
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear stack");
+makeRectangle(237, 393, 1701, 1716);
+makeRectangle(306, 393, 1632, 1716);
+makeRectangle(306, 387, 1632, 1722);
+makeRectangle(306, 387, 1632, 1623);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RA1_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+//setTool("rectangle");
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RA1_raw\\Kierunek2\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(243, 150, 1878, 1902);
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear slice");
+makeRectangle(243, 327, 1878, 1725);
+makeRectangle(243, 327, 1767, 1725);
+makeRectangle(243, 327, 1767, 1635);
+makeRectangle(327, 327, 1683, 1635);
+run("Undo");
+makeRectangle(327, 264, 1770, 1698);
+makeRectangle(297, 264, 1800, 1788);
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear stack");
+makeRectangle(297, 321, 1800, 1731);
+makeRectangle(297, 321, 1710, 1731);
+makeRectangle(297, 321, 1710, 1635);
+makeRectangle(327, 321, 1680, 1635);
+makeRectangle(327, 330, 1680, 1626);
+run("Make Substack...", "  slices=330-1330")
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RA1_raw\\Kierunek2\\volume.xls");
+run("Close");
+run("Close");
+run("Close");
+
+//setTool("rectangle");
+
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RA1_raw\\Kierunek3\\P1\\6_5um_2284x2284x1600.raw] image=8-bit width=2284 height=2284 offset=0 number=1600 gap=0");
+makeRectangle(231, 438, 1854, 1629);
+makeRectangle(231, 312, 1854, 1755);
+makeRectangle(231, 312, 1854, 1776);
+makeRectangle(231, 312, 1854, 1797);
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear slice");
+
+run("Undo");
+makeRectangle(318, 396, 1659, 1662);
+makeRectangle(333, 396, 1644, 1662);
+makeRectangle(333, 396, 1644, 1662);
+makeRectangle(333, 390, 1644, 1668);
+makeRectangle(333, 378, 1689, 1680);
+makeRectangle(294, 378, 1728, 1734);
+makeRectangle(294, 369, 1728, 1743);
+run("Rotate... ", "angle=1 grid=1 interpolation=Bilinear stack");
+makeRectangle(294, 417, 1683, 1695);
+makeRectangle(348, 417, 1629, 1623);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RA1_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+//setTool("rectangle");
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RC_raw\\Kierunek1\\P1\\6_5um_2000x2000x1500.raw] image=8-bit width=2000 height=2000 offset=0 number=1500 gap=0");
+makeRectangle(303, 180, 1653, 1620);
+makeRectangle(150, 180, 1806, 1620);
+run("Rotate... ", "angle=355 grid=1 interpolation=Bilinear slice");
+makeRectangle(150, 294, 1806, 1506);
+makeRectangle(150, 294, 1563, 1506);
+makeRectangle(261, 294, 1452, 1506);
+makeRectangle(261, 294, 1452, 1416);
+run("Undo");
+makeRectangle(261, 237, 1671, 1473);
+makeRectangle(144, 237, 1788, 1548);
+run("Rotate... ", "angle=355 grid=1 interpolation=Bilinear stack");
+makeRectangle(144, 303, 1557, 1482);
+makeRectangle(261, 303, 1440, 1416);
+makeRectangle(234, 546, 1473, 1164);
+makeRectangle(234, 294, 1473, 1416);
+makeRectangle(258, 294, 1449, 1416);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RC_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+//setTool("rectangle");
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RC_raw\\Kierunek2\\P1\\6_5um_2284x2284x1650.raw] image=8-bit width=2284 height=2284 offset=0 number=1650 gap=0");
+makeRectangle(297, 480, 1620, 1479);
+makeRectangle(285, 480, 1632, 1479);
+makeRectangle(285, 480, 1611, 1479);
+makeRectangle(285, 510, 1611, 1449);
+makeRectangle(285, 510, 1611, 1422);
+makeRectangle(285, 513, 1611, 1419);
+makeRectangle(285, 513, 1608, 1419);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RC_raw\\Kierunek2\\volume.xls");
+run("Close");
+run("Close");
+run("Close");
+
+//setTool("rectangle");
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RC_raw\\Kierunek3\\P1\\6_5um_2284x2284x1650.raw] image=8-bit width=2284 height=2284 offset=0 number=1650 gap=0");
+makeRectangle(303, 378, 1605, 1455);
+makeRectangle(303, 384, 1605, 1449);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc 1RC_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+//setTool("rectangle");
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03LB1_raw\\Kierunek1\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+
+
+makeRectangle(366, 282, 1716, 1653);
+run("Rotate... ", "angle=355 grid=1 interpolation=Bilinear slice");
+run("Undo");
+run("Rotate... ", "angle=356 grid=1 interpolation=Bilinear slice");
+makeRectangle(366, 378, 1716, 1557);
+makeRectangle(366, 327, 1716, 1608);
+run("Undo");
+run("Rotate... ", "angle=357 grid=1 interpolation=Bilinear slice");
+makeRectangle(366, 390, 1716, 1545);
+makeRectangle(366, 390, 1716, 1524);
+makeRectangle(429, 390, 1653, 1524);
+makeRectangle(429, 390, 1590, 1524);
+run("Undo");
+makeRectangle(429, 336, 1707, 1578);
+makeRectangle(324, 336, 1812, 1650);
+run("Rotate... ", "angle=357 grid=1 interpolation=Bilinear stack");
+makeRectangle(324, 402, 1665, 1584);
+makeRectangle(324, 402, 1692, 1584);
+makeRectangle(324, 402, 1692, 1506);
+makeRectangle(423, 402, 1593, 1506);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03LB1_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+//setTool("rectangle");
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03LB1_raw\\Kierunek3\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+
+makeRectangle(351, 198, 1722, 1806);
+makeRectangle(288, 198, 1785, 1806);
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear slice");
+makeRectangle(288, 282, 1785, 1722);
+makeRectangle(288, 282, 1689, 1722);
+run("Undo");
+makeRectangle(288, 282, 1758, 1722);
+makeRectangle(288, 225, 1758, 1779);
+run("Rotate... ", "angle=2 grid=1 interpolation=Bilinear slice");
+makeRectangle(288, 282, 1758, 1722);
+makeRectangle(378, 282, 1668, 1722);
+makeRectangle(378, 282, 1668, 1602);
+run("Undo");
+makeRectangle(378, 168, 1740, 1716);
+makeRectangle(321, 168, 1797, 1761);
+run("Rotate... ", "angle=2 grid=1 interpolation=Bilinear stack");
+makeRectangle(321, 285, 1644, 1644);
+makeRectangle(384, 285, 1581, 1644);
+makeRectangle(384, 285, 1581, 1581);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03LB1_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+
+
+//setTool("rectangle");
+
+
+
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03RA1_raw\\Kierunek1\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+makeRectangle(396, 240, 1623, 1587);
+makeRectangle(396, 234, 1623, 1593);
+makeRectangle(396, 234, 1623, 1593);
+makeRectangle(396, 228, 1623, 1599);
+makeRectangle(378, 228, 1641, 1599);
+makeRectangle(378, 228, 1602, 1599);
+
+makeRectangle(357, 237, 1644, 1599);
+makeRectangle(357, 228, 1644, 1608);
+makeRectangle(357, 222, 1644, 1614);
+makeRectangle(390, 222, 1611, 1614);
+makeRectangle(387, 222, 1611, 1614);
+makeRectangle(387, 222, 1587, 1614);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03RA1_raw\\Kierunek1\\volume.xls");
+run("Close");run("Close");run("Close");
+
+
+//setTool("rectangle");
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03RA1_raw\\Kierunek2\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+makeRectangle(213, 210, 1740, 1587);
+makeRectangle(213, 180, 1740, 1617);
+run("Rotate... ", "angle=3 grid=1 interpolation=Bilinear slice");
+run("Undo");
+run("Rotate... ", "angle=2 grid=1 interpolation=Bilinear slice");
+makeRectangle(213, 240, 1740, 1557);
+makeRectangle(213, 240, 1656, 1557);
+run("Undo");
+makeRectangle(213, 192, 1773, 1605);
+makeRectangle(213, 192, 1773, 1659);
+run("Rotate... ", "angle=2 grid=1 interpolation=Bilinear stack");
+makeRectangle(213, 240, 1773, 1611);
+makeRectangle(213, 240, 1662, 1611);
+makeRectangle(213, 240, 1662, 1551);
+makeRectangle(270, 240, 1605, 1551);
+makeRectangle(276, 240, 1599, 1551);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03RA1_raw\\Kierunek2\\volume.xls");
+run("Close");
+run("Close");
+run("Close");
+
+//setTool("rectangle");
+
+
+run("Raw...", "open=[F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03RA1_raw\\Kierunek3\\P1\\6_5um_2264x2264x1600.raw] image=8-bit width=2264 height=2264 offset=0 number=1600 gap=0");
+makeRectangle(297, 219, 1788, 1776);
+
+makeRectangle(297, 219, 1788, 1776);
+run("Rotate... ", "angle=358 grid=1 interpolation=Bilinear slice");
+makeRectangle(297, 303, 1788, 1692);
+run("Undo");
+makeRectangle(297, 267, 1788, 1728);
+run("Rotate... ", "angle=359 grid=1 interpolation=Bilinear slice");
+makeRectangle(297, 303, 1788, 1692);
+makeRectangle(297, 192, 1788, 1803);
+run("Undo");
+run("Rotate... ", "angle=359 grid=1 interpolation=Bilinear stack");
+makeRectangle(297, 303, 1788, 1692);
+makeRectangle(297, 303, 1665, 1692);
+makeRectangle(297, 303, 1665, 1599);
+makeRectangle(297, 303, 1665, 1599);
+makeRectangle(357, 303, 1605, 1599);
+run("Make Substack...", "  slices=330-1330");
+setAutoThreshold("Default");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+setAutoThreshold("Default");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+//setTool("hand");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
+saveAs("Results", "F:\\Natalia Milaniak\\uCT+compression_(razem)\\Kosc K03RA1_raw\\Kierunek3\\volume.xls");
+run("Close");run("Close");run("Close");

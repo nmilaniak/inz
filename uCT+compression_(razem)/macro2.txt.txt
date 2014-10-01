@@ -1,0 +1,7 @@
+run("Make Substack...", "  slices=203-736");
+run("Size...", "width=1548 height=1476 depth=1 constrain average interpolation=Bilinear");
+setAutoThreshold("Default");
+//run("Threshold...");
+run("Convert to Mask");
+run("Volume Fraction", "algorithm=Voxel surface=6 use");
+run("Volume Fraction", "algorithm=Surface surface=6 use");
