@@ -1,0 +1,63 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -29.1199999999995
+xMax = 109.119999999996
+xTickUnit = 5
+xGridUnit = 5
+yMin = -3.56927324399951
+yMax = 1.46993393127268
+yTickUnit = 0.5
+yGridUnit = 0.5
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+LegendPlacement = 0
+LegendPos = 53.1127819548872,1.09309825673534
+
+[PointSeries1]
+FillColor = clBlack
+LineColor = clBlack
+Size = 2
+Style = 0
+LabelPosition = 1
+PointCount = 9
+Points = 10,0.6;15,0.8;20,0.93;22,1;27,1.05;35,1.02;45,1;55,0.92;80,0.78;
+LegendText = Series 1
+
+[Func1]
+FuncType = 0
+y = -1.6175241E-07*x^4+3.68263769E-05*x^3-0.00305439*x^2+0.10333248*x-0.16827105
+LegendText = f(x)=-1.6175E-07*x^4+3.6826E-05*x^3-0.0031*x^2+0.1033*x-0.1683; R²=0.9905
+Color = clRed
+
+[PointSeries2]
+FillColor = clNavy
+LineColor = clBlack
+Size = 2
+Style = 0
+LabelPosition = 1
+PointCount = 9
+Points = 2.5,0.6;3.75,0.8;5,0.93;5.5,1;6.75,1.05;8.75,1.02;11.25,1;13.75,0.92;20,0.78;
+LegendText = Series 2
+
+[Func2]
+FuncType = 0
+y = -4.14086171E-05*x^4+0.00235689*x^3-0.0488702*x^2+0.41332993*x-0.16827105
+LegendText = f(x)=-4.1409E-05*x^4+0.0024*x^3-0.0489*x^2+0.4133*x-0.1683; R²=0.9905
+Color = clRed
+
+[Data]
+TextLabelCount = 0
+FuncCount = 2
+PointSeriesCount = 2
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

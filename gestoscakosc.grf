@@ -1,0 +1,82 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -0.08667375
+xMax = 0.95341125
+xTickUnit = 0.05
+xGridUnit = 0.05
+xLabel = Gęstość [g/cm^3]
+yMin = -0.015729
+yMax = 0.173019
+yTickUnit = 0.02
+yGridUnit = 0.02
+yLabel = Moduł Young'a [GPa]
+AxesColor = clBlack
+GridColor = 0x00FF9999
+LegendFont = Times New Roman,12,clBlack
+ShowLegend = 1
+Radian = 1
+LegendPlacement = 0
+LegendPos = 0.0358425281954887,0.155669738510301
+
+[PointSeries1]
+FillColor = clNavy
+LineColor = clBlack
+Size = 2
+Style = 0
+LabelPosition = 1
+PointCount = 8
+Points = 0.6980126,0.14164;0.6957013,0.1517775;0.8205115,0.154156;0.808955,0.1467375;0.8182002,0.14406;0.3744306,0.119595;0.3836758,0.082853;0.3767419,0.0620023;
+yErrorBarType = 3
+yErrorBarData = 0.0086663;0.0084776;0.0071644;0.0031228;0.0026619;0.0033132;0.0029108;0.0049484;
+LegendText = K01
+
+[PointSeries2]
+FillColor = clPurple
+LineColor = clBlack
+Size = 2
+Style = 0
+LabelPosition = 1
+PointCount = 9
+Points = 0.4738165,0.1199144;0.4715052,0.135094;0.4691939,0.1070868;0.7465499,0.1159383;0.7557951,0.144385;0.7581064,0.1057523;0.2704221,0.070031;0.2842899,0.10425;0.2588656,0.0749672;
+yErrorBarType = 3
+yErrorBarData = 0.0202769;0.0204831;0.0193725;0.0129271;0.0061291;0.0096501;0.008819;0.0023295;0.0069802;
+LegendText = K03
+
+[PointSeries3]
+FillColor = clBlack
+LineColor = clBlack
+Size = 2
+Style = 0
+LabelPosition = 1
+PointCount = 9
+Points = 0.7696629,0.1385033;0.7742855,0.1272167;0.7765968,0.15729;0.7003239,0.1336167;0.7095691,0.134655;0.7072578,0.128352;0.3628741,0.110773;0.3813645,0.0769756;0.3744306,0.0943426;
+yErrorBarType = 3
+yErrorBarData = 0.0097705;0.0048891;0.0032041;0.0067699;0.007655;0.0145474;0.0116977;0.0149927;0.01570699;
+LegendText = K05
+
+[PointSeries4]
+FillColor = clGreen
+LineColor = clBlack
+Size = 2
+Style = 0
+LabelPosition = 1
+PointCount = 9
+Points = 0.6124945,0.104699;0.6171171,0.120527;0.6148058,0.1284833;0.8644262,0.1554625;0.8667375,0.13077;0.8621149,0.1497275;0.3582515,0.0658136;0.3605628,0.080492;0.3513176,0.093966;
+yErrorBarType = 3
+yErrorBarData = 0.0072104;0.0010219;0.0082385;0.0048127;0.0021063;0.0060113;0.0046602;0.0078903;0.00173846;
+LegendText = K06
+
+[Data]
+TextLabelCount = 0
+FuncCount = 0
+PointSeriesCount = 4
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
